@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func main() {
+func variables() {
 	//Forma de crear una variable definida
 	var myString string = "Hola, declare que soy un string."
 	fmt.Println(myString)
