@@ -8,8 +8,16 @@ import (
 
 func main() {
 
+	//Llamo funciones definidas despues
+	variables()
+	fmt.Println(cadenaTexto())
+	condiEIteracion()
+}
+
+func variables() {
+
 	//hola mundo
-	fmt.Println("Hola,Go")
+	fmt.Println("Hola,Go\n")
 	/*
 		fmt.Println("Hola,Go")
 		fmt.Println("Hola,Go")
@@ -17,10 +25,10 @@ func main() {
 		fmt.Println("Hola,Go")
 	*/
 
-	fmt.Println("Hola,Go")
+	fmt.Println("Hola,Go\n")
 
 	//var/const nameVar tipo = valor
-	var myString string = "Hola, declare que soy un string."
+	var myString string = "Hola, declare que soy un string.\n"
 	fmt.Println(myString)
 
 	//Forma de crear una variable indefinida
@@ -50,15 +58,23 @@ func main() {
 	fmt.Println(myBool)
 
 	//Variable declarada e inicializada
-	myString3 := "Esto es un string"
+	myString3 := "Esto es un string\n"
 	fmt.Println(myString3)
 
 	//Constantes
-	const myConst = "Esto es una constante"
+	const myConst = "Esto es una constante\n"
 	fmt.Println(myConst)
 }
 
+func cadenaTexto() string {
+	return "Hola soy una cadena de texto adentro de una funcion\n"
+}
+
 func condiEIteracion() {
+
+	//retomo la funcion anterior
+
+	//retorno a una funcion
 
 	myInt := 10
 	myString := "Hola"
@@ -66,7 +82,7 @@ func condiEIteracion() {
 	if myInt == 11 && myString == "Hola" {
 		fmt.Println("correcto")
 	} else if myInt == 10 || myString == "Hola" {
-		fmt.Println("la prueba de la condicion OR es correcta")
+		fmt.Println("la prueba de la condicion OR es correcta\n")
 	} else {
 		fmt.Println("incorrecto")
 	}
@@ -124,4 +140,5 @@ func condiEIteracion() {
 	for index, value := range myArray {
 		fmt.Println(index, value)
 	}
+
 }
